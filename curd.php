@@ -12,7 +12,8 @@ include 'dbconnect.php';
 // }
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['addUser'])) {
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -69,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="text-center">
+            <input type="hidden" name="addUser" value="addUser">
         <button type="submit" class="btn btn-primary">Create User</button>
         </div>
     </form>
