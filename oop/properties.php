@@ -22,6 +22,7 @@
 	// echo $p1->name;
 	echo $p1->getname();
 	// echo $p1->updatename();
+	echo "<br>";
 	echo $p1->updatename("swati");
 
 ?>
